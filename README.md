@@ -21,13 +21,13 @@
 This project extends my cybersecurity lab by adding an **Android virtual 
 machine** to the same NAT Network already running Kali Linux and Windows 10.
 
-The goal was to create a third machine on the lab network — representing 
-a mobile target — and confirm full two-way connectivity between Android, 
+The goal was to create a third machine on the lab network, representing 
+a mobile target, and confirm full two-way connectivity between Android, 
 Kali Linux, and the internet.
 
 This was the most challenging of the three lab setup projects, involving 
 significant troubleshooting around Android-x86 compatibility with 
-VirtualBox 7.x on Windows 11.
+VirtualBox 7.2 on Windows 11.
 
 ---
 
@@ -63,7 +63,7 @@ VirtualBox 7.x on Windows 11.
 
 The initial attempt used Android-x86 9.0. After a full installation 
 and extensive troubleshooting, Android 9.0 had an unresolvable network 
-driver conflict on Windows 11 with VirtualBox 7.2 — the VM would either 
+driver conflict on Windows 11 with VirtualBox 7.2, the VM would either 
 load the GUI without network access, or load the network stack without 
 a GUI, depending on the graphics controller used.
 
